@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
         <xsl:template match="ite/">
@@ -16,12 +16,12 @@
                             <xsl:value-of select="@nombre"/>
                         </profesor>
                     </xsl:for-each>    
-                    <xsl:value-of select="director">
+                    <xsl:value-of select="director"/>
                         <director>
                             <xsl:value-of select="@nombre"/>
                             <xsl:value-of select="@despacho"/>
                         </director>
-                    <xsl:value-of select="jefe_estudios">
+                    <xsl:value-of select="jefe_estudios"/>
                         <jefe_estudios>
                             <xsl:value-of select="@id"/>
                             <xsl:value-of select="@nombre"/>
